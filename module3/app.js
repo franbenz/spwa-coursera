@@ -45,7 +45,7 @@
 				    var foundItems = result.data.menu_items;
 				    //console.log(foundItems);
 				    var filteredItems = foundItems.filter(function(i){
-					    return i.description.indexOf(searchTerm)==0;
+					    return i.description.match(searchTerm);
 				    })
 				    //.filter(function(i){
 				    // });
