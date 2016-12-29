@@ -18,7 +18,7 @@
 			var promise = MenuSearchService.getMatchedMenuItems(narrowController.searchTerm);
 			promise.then(function(items){
 				narrowController.found = items;
-				if(!narrowController.found){
+				if(!narrowController.found.length){
 					narrowController.message = 'Nothing found!';
 				} else{
 					narrowController.message = '';
